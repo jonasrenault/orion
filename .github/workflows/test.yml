@@ -1,0 +1,42 @@
+name: Test
+
+on:
+  # Trigger the workflow on push or pull request, but only for the main branch
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+env: # environment variables (available in any part of the action)
+  PYTHON_VERSION: 3.12
+
+jobs:
+  lint-test:
+    name: Run Python linters & test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v5
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+
+      - name: Run black
+        run: uv run --group dev black --check --config ./pyproject.toml .
+
+      - name: Run ruff
+        run: uv run --group dev ruff check
+
+      - name: Run mypy
+        run: uv run --group dev mypy --config-file=pyproject.toml
+
+      - name: Test with pytest
+        run: uv run --group dev pytest
+
+      # Using uv cache prune --ci at the end of the job is recommended to reduce cache size.
+      - name: Cache prune
+        run: uv cache prune --ci

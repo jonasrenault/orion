@@ -1,0 +1,76 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "orion"
+version = "0.1.0"
+description = "Orion - Automated Target Recognition of Military Vehicles"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    {name = "Jonas Renault", email = "jonasrenault@gmail.com"},
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fiftyone>=1.9.0",
+    "jupyterlab>=4.4.9",
+    "pydantic-settings>=2.11.0",
+    "tqdm>=4.67.1",
+    "typer>=0.20.0",
+    "ultralytics>=8.3.218",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jonasrenault/adomvi#readme"
+"Repository" = "https://github.com/jonasrenault/adomvi"
+
+[project.scripts]
+orion = "orion.cli.main:app"
+
+[dependency-groups]
+dev = [
+    "black>=25.9.0",
+    "mypy>=1.18.2",
+    "pre-commit>=4.3.0",
+    "pytest>=8.4.2",
+    "ruff>=0.14.1",
+]
+
+[tool.black]
+line_length = 90
+target_version = ['py312']
+
+[tool.ruff]
+exclude = [
+    ".venv",
+    ".git",
+    "__pycache__",
+    "build",
+    "dist",
+    "venv",
+]
+src = ["orion", "tests"]
+line-length = 90
+
+[tool.ruff.lint]
+ignore = []
+select = [
+    "E",
+    "F",
+    "W",
+    "I001",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["orion"]
+
+[tool.mypy]
+files = ["orion", "tests"]
+disable_error_code = ["import-untyped"]
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::UserWarning",
+    'ignore::DeprecationWarning',
+]
