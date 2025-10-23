@@ -2,6 +2,10 @@
 
 🛰️ A deep-learning–based system for automated detection and classification of military vehicles in video data. Orion integrates visual recognition, motion analysis, and tracking modules to provide real-time situational awareness in complex environments.
 
+<div align="center">
+  <img src="docs/imgs/tank_tracking.gif" width="640"/>
+</div>
+
 ## Documentation
 
 **The documentation for Orion is available [here](https://jonasrenault.github.io/orion/).**
@@ -59,11 +63,3 @@ jupyter lab
 
 and open one of the notebooks in the `notebooks` directory.
 
-## TODO
-
-- [x] add train, track and evaluate notebooks with associate commands
-- [ ] add dreambooth logic
-- [ ] add documentation and examples with mkdocs
-- [x] update repo name
-- [ ] update url for google dataset
-- [ ] upload roboflow dataset to github and update roboflow url
