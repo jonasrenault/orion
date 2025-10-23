@@ -1,6 +1,6 @@
 site_name: ORION
 site_description: Automated Target Recognition of Military Vehicles
-site_url: https://jonasrenault.github.io/orion/
+site_url: http://jrenault.fr/orion/
 nav:
     - Home: index.md
 theme:
@@ -41,4 +41,3 @@ markdown_extensions:
   - pymdownx.superfences
 repo_name: jonasrenault/orion
 repo_url: https://github.com/jonasrenault/orion
-

@@ -8,7 +8,7 @@
 
 ## Documentation
 
-**The documentation for Orion is available [here](https://jonasrenault.github.io/orion/).**
+**The documentation for Orion is available [here](http://jrenault.fr/orion/).**
 
 ## Installation
 
@@ -42,7 +42,7 @@ When you install Orion in a virtual environment, it creates a CLI script called 
 orion --help
 ```
 
-to see the various commands available (or take a look at the [documentation](https://jonasrenault.github.io/orion/) for examples).
+to see the various commands available (or take a look at the [documentation](http://jrenault.fr/orion/) for examples).
 
 ## Contents
 
