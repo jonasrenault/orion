@@ -10,7 +10,7 @@
 
 **The documentation for Orion is available [here](https://jonasrenault.github.io/orion/).**
 
-## Install
+## Installation
 
 Orion requires a recent version of python: ![python_version](https://img.shields.io/badge/Python-%3E=3.12-blue).
 
@@ -34,7 +34,7 @@ uv sync
 
 ## Usage
 
-### CLI
+### Command-line
 
 When you install Orion in a virtual environment, it creates a CLI script called `orion`. Run
 
@@ -62,4 +62,3 @@ jupyter lab
 ```
 
 and open one of the notebooks in the `notebooks` directory.
-
