@@ -156,7 +156,7 @@ def _convert_yolo_detections_to_fiftyone(
 
 
 def add_yolo_detections(
-    test_view: fo.DatasetView,
+    test_view: fo.Dataset | fo.DatasetView,
     prediction_field: str,
     predictions_dir: Path,
     class_list: list[str],
@@ -165,7 +165,7 @@ def add_yolo_detections(
     Add detections predicted with a yolo model to a Fiftyone View
 
     Args:
-        test_view (fo.DatasetView): the test view
+        test_view (fo.Dataset | fo.DatasetView): the test view
         prediction_field (str): the prediction field to store detections in the test view
         predictions_dir (Path): the predictions directory
         class_list (list[str]): the class list

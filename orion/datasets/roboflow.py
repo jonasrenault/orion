@@ -58,4 +58,4 @@ def restructure_dataset(dir: Path):
         # Delete the original subdirectory
         shutil.rmtree(source_path)
 
-    LOGGER.info("Dataset directo restructured successfully.")
+    LOGGER.info("Dataset directory restructured successfully.")
