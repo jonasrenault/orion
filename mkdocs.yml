@@ -1,0 +1,44 @@
+site_name: ORION
+site_description: Automated Target Recognition of Military Vehicles
+site_url: https://jonasrenault.github.io/orion/
+nav:
+    - Home: index.md
+theme:
+  name: 'material'
+  palette:
+  - media: (prefers-color-scheme)
+    toggle:
+      icon: material/lightbulb-auto
+      name: Switch to light mode
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    primary: teal
+    accent: amber
+    toggle:
+      icon: material/lightbulb
+      name: Switch to dark mode
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    primary: teal
+    accent: amber
+    toggle:
+      icon: material/lightbulb-outline
+      name: Switch to system preference
+  features:
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+repo_name: jonasrenault/orion
+repo_url: https://github.com/jonasrenault/orion
+

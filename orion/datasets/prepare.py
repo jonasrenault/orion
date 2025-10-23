@@ -18,7 +18,7 @@ from orion.yolo.utils import export_yolo_data
 app = typer.Typer()
 LOGGER = logging.getLogger(__name__)
 
-GOOGLE_DATASET_URL = "https://github.com/jonasrenault/adomvi/releases/download/v1.2.0/military-vehicles-dataset.tar.gz"
+GOOGLE_DATASET_URL = "https://github.com/jonasrenault/orion/releases/download/v1.2.0/military-vehicles-dataset.tar.gz"
 
 
 @app.command()

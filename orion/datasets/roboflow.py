@@ -7,7 +7,7 @@ from orion.utils import download_and_extract
 
 LOGGER = logging.getLogger(__name__)
 
-DATASET_URL = "https://universe.roboflow.com/ds/P2jPq32qKU?key=E4MIo8mavP"
+DATASET_URL = "https://github.com/jonasrenault/orion/releases/download/v1.3.0/Russian-military-annotated.v4-2022-06-13-with-null-images.voc.zip"
 LABEL_MAPPING = {
     "bm-21": "AFV",
     "t-80": "AFV",

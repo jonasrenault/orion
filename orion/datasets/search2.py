@@ -13,7 +13,7 @@ from orion.yolo.utils import _uncenter_boxes
 LOGGER = logging.getLogger(__name__)
 
 DATASET_URL = (
-    "https://github.com/jonasrenault/adomvi/releases/download/v1.3.0/search_2.tar.gz"
+    "https://github.com/jonasrenault/orion/releases/download/v1.3.0/search_2.tar.gz"
 )
 LABEL_MAPPING = {
     "M60": "AFV",
