@@ -1,8 +1,7 @@
 name: Test
 
 on:
-  # Trigger the workflow on push or pull request,
-  # but only for the main branch
+  # Trigger the workflow on push or pull request, but only for the main branch
   push:
     branches:
       - main
@@ -11,42 +10,33 @@ on:
       - main
 
 env: # environment variables (available in any part of the action)
-  PYTHON_VERSION: "3.10"
+  PYTHON_VERSION: 3.12
 
 jobs:
   lint-test:
-    name: Run tests
+    name: Run Python linters & test
     runs-on: ubuntu-latest
     steps:
-      - name: Git checkout
-        uses: actions/checkout@v4
+      - name: Check out Git repository
+        uses: actions/checkout@v5
 
-      - name: Install poetry
-        run: pipx install poetry
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
-          cache: "poetry"
-
-      - name: Check Poetry File
-        run: poetry check
-
-      - name: Check lock file
-        run: poetry lock --check
-
-      - name: Install dependencies
-        run: poetry install --no-interaction --no-root --with dev --with stubs
-
-      #   - name: Test with pytest
-      #     run: poetry run pytest
+          enable-cache: true
 
       - name: Run black
-        run: poetry run black --check --config ./pyproject.toml .
-
-      - name: Run mypy
-        run: poetry run mypy --config-file=pyproject.toml
+        run: uv run --group dev black --check --config ./pyproject.toml .
 
       - name: Run ruff
-        run: poetry run ruff check
+        run: uv run --group dev ruff check
+
+      - name: Run mypy
+        run: uv run --group dev mypy --config-file=pyproject.toml
+
+      # - name: Test with pytest
+      #   run: uv run --group dev pytest
+
+      # Using uv cache prune --ci at the end of the job is recommended to reduce cache size.
+      - name: Cache prune
+        run: uv cache prune --ci

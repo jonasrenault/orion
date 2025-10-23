@@ -1,26 +1,19 @@
-exclude: "templates"
-
 default_language_version:
-  python: python3.10
+  python: python3.12
 
 repos:
   # general checks (see here: https://pre-commit.com/hooks.html)
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v6.0.0
     hooks:
       - id: check-yaml
         args: [--allow-multiple-documents]
       - id: end-of-file-fixer
       - id: trailing-whitespace
 
-  - repo: https://github.com/python-poetry/poetry
-    rev: '1.8.2'
-    hooks:
-      - id: poetry-check
-
   # black - formatting
   - repo: https://github.com/psf/black
-    rev: 24.4.0
+    rev: 25.9.0
     hooks:
       - id: black
         name: black
@@ -30,14 +23,14 @@ repos:
 
   # ruff - linting
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: "v0.4.7"
+    rev: "v0.14.1"
     hooks:
       - id: ruff
         name: ruff
 
   # mypy - lint-like type checking
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.10.1
+    rev: v1.18.2
     hooks:
       - id: mypy
         name: mypy

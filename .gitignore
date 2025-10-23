@@ -160,6 +160,8 @@ cython_debug/
 #.idea/
 .vscode
 
+.ruff_cache
+
 imagenet/
 vehicles/
 dataset/
