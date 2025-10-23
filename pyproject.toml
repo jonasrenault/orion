@@ -24,8 +24,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/jonasrenault/adomvi#readme"
-"Repository" = "https://github.com/jonasrenault/adomvi"
+"Homepage" = "https://github.com/jonasrenault/orion#readme"
+"Repository" = "https://github.com/jonasrenault/orion"
 
 [project.scripts]
 orion = "orion.cli.main:app"
