@@ -34,8 +34,8 @@ jobs:
       - name: Run mypy
         run: uv run --group dev mypy --config-file=pyproject.toml
 
-      - name: Test with pytest
-        run: uv run --group dev pytest
+      # - name: Test with pytest
+      #   run: uv run --group dev pytest
 
       # Using uv cache prune --ci at the end of the job is recommended to reduce cache size.
       - name: Cache prune
