@@ -32,6 +32,9 @@ orion = "orion.cli.main:app"
 
 [project.optional-dependencies]
 logging = []
+docs = [
+    "mkdocs-material>=9.6.22",
+]
 
 [dependency-groups]
 dev = [
