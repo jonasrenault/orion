@@ -3,7 +3,12 @@ from pathlib import Path
 from typing import Annotated
 
 import typer
-from ultralytics import YOLO  # pyright: ignore[reportPrivateImportUsage]
+from ultralytics import (
+    YOLO,  # pyright: ignore[reportPrivateImportUsage]
+)
+from ultralytics import (
+    settings as yolo_settings,
+)
 from ultralytics.engine.results import Results
 
 from orion.config.settings import settings
@@ -53,6 +58,7 @@ def train(
         device (str, optional): device to use. Defaults to ''.
         plots (bool, optional): plot metrics during training. Defaults to True.
     """
+    yolo_settings.update({"tensorboard": True})
     model = YOLO(base_model)  # load a pretrained model
 
     results = model.train(
