@@ -42,12 +42,12 @@ to see the various commands available (or take a look at the [documentation](htt
 
 ## Contents
 
-- The [orion](./orion/) directory contains the source code used to fetch and format datasets for training a Yolov8 model for object detection.
+- The [orion](./orion/) directory contains the source code used to fetch and format datasets for fine-tuning a YOLO12 model for object detection.
 - The [resources](./resources/) directory contains video samples for vehicle detection task.
 - The [notebooks](./notebooks/) directory contains exemple notebooks on how to
-  1. [Prepare](./notebooks/01_Prepare.ipynb) a custom dataset of images annotated for automatic detection of military vehicles.
-  2. [Train](./notebooks/02_Train.ipynb) train a Yolov8 model using the prepared dataset.
-  2. [Evaluate](./notebooks/03_Evaluate.ipynb) train a Yolov8 model using the prepared dataset.
+  1. [Prepare](./notebooks/01_Prepare.ipynb) a custom dataset of images annotated for automatic target recognition of military vehicles.
+  2. [Train](./notebooks/02_Train.ipynb) fine-tune a YOLO12 model using the prepared dataset.
+  3. [Evaluate](./notebooks/03_Evaluate.ipynb) a fine-tuned model on a realistic test dataset.
 
 ## Run the notebooks
 
