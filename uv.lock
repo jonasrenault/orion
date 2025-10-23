@@ -1568,6 +1568,33 @@ wheels = [
 ]
 
 [[package]]
+name = "lap"
+version = "0.5.12"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/6c/cf/ef745c8977cbb26fba5f8433fd4bfd6bf009a90802c0a1cc7139e11f478b/lap-0.5.12.tar.gz", hash = "sha256:570b414ea7ae6c04bd49d0ec8cdac1dc5634737755784d44e37f9f668bab44fd", size = 1520169, upload-time = "2024-11-30T14:27:56.096Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/24/29/50a77fa27ed19b75b7599defedafd5f4a64a66bdb6255f733fdb8c9fafcb/lap-0.5.12-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:1211fca9d16c0b1383c7a93be2045096ca5e4c306e794fcf777ac52b30f98829", size = 1481435, upload-time = "2024-11-30T01:24:58.094Z" },
+    { url = "https://files.pythonhosted.org/packages/c5/2b/41acf93603d3db57e512c77c98f4f71545602efa0574ca685608078cc0f5/lap-0.5.12-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:8dcafbf8363308fb289d7cd3ae9df375ad090dbc2b70f5d7d038832e87d2b1a1", size = 1478195, upload-time = "2024-11-30T01:25:16.925Z" },
+    { url = "https://files.pythonhosted.org/packages/3a/6e/d7644b2b2675e2c29cc473c3dde136f02f4ed30ecbc8ef89b51cbb4f7ad1/lap-0.5.12-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:f721ed3fd2b4f6f614870d12aec48bc44c089587930512c3187c51583c811b1c", size = 1725693, upload-time = "2024-11-30T01:25:19.404Z" },
+    { url = "https://files.pythonhosted.org/packages/c6/3c/8d3f80135022a2db3eb7212fa9c735b7111dcb149d53deb62357ff2386f0/lap-0.5.12-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:797d9e14e517ac06337b6dca875bdf9f0d88ec4c3214ebb6d0676fed197dc13f", size = 1726953, upload-time = "2024-11-30T01:25:44.067Z" },
+    { url = "https://files.pythonhosted.org/packages/fe/e1/badf139f34ff7c7c07ba55e6f39de9ea443d9b75fd97cc4ed0ce67eeb36b/lap-0.5.12-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:5a2424daf7c7afec9b93ed02af921813ab4330826948ce780a25d94ca42df605", size = 1712981, upload-time = "2024-11-30T01:25:58.948Z" },
+    { url = "https://files.pythonhosted.org/packages/ef/4a/e2d0925e5ead474709eb89c6bbb9cd188396c9e3384a1f5d2491a38aeab6/lap-0.5.12-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:1c34c3d8aefbf7d0cb709801ccf78c6ac31f4b1dc26c169ed1496ed3cb6f4556", size = 1728876, upload-time = "2024-11-30T01:26:25.744Z" },
+    { url = "https://files.pythonhosted.org/packages/46/89/73bad73b005e7f681f8cfa2c8748e9d766b91da781d07f300f86a9eb4f03/lap-0.5.12-cp312-cp312-win_amd64.whl", hash = "sha256:753ef9bd12805adbf0d09d916e6f0d271aebe3d2284a1f639bd3401329e436e5", size = 1476975, upload-time = "2024-11-30T01:26:40.341Z" },
+    { url = "https://files.pythonhosted.org/packages/d9/8d/00df0c44b728119fe770e0526f850b0a9201f23bf4276568aef5b372982e/lap-0.5.12-cp312-cp312-win_arm64.whl", hash = "sha256:83e507f6def40244da3e03c71f1b1f54ceab3978cde72a84b84caadd8728977e", size = 1466243, upload-time = "2024-11-30T01:26:43.202Z" },
+    { url = "https://files.pythonhosted.org/packages/e1/07/85a389eb4c6a9bf342f79811dd868ed3b6e56402f1dfa71474cec3c5ac30/lap-0.5.12-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:0c4fdbd8d94ad5da913ade49635bad3fc4352ee5621a9f785494c11df5412d6d", size = 1479752, upload-time = "2024-11-30T01:27:06.417Z" },
+    { url = "https://files.pythonhosted.org/packages/b1/01/46ba9ab4b9d95b43058591094e49ef21bd7e6fe2eb5202ece0b23240b2dc/lap-0.5.12-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:e2d01113eec42174e051ee5cebb5d33ec95d37bd2c422b7a3c09bbebaf30b635", size = 1477146, upload-time = "2024-11-30T01:27:26.769Z" },
+    { url = "https://files.pythonhosted.org/packages/7e/c3/9f6829a20e18c6ca3a3e97fcab815f0d888b552e3e37b892d908334d0f22/lap-0.5.12-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:6a6e8ed53cb4d85fa0875092bc17436d7eeab2c7fb3574e551c611c352fea8c8", size = 1717458, upload-time = "2024-11-30T01:27:29.936Z" },
+    { url = "https://files.pythonhosted.org/packages/f9/bb/0f3a44d7220bd48f9a313a64f4c228a02cbb0fb1f55fd449de7a0659a5e2/lap-0.5.12-cp313-cp313-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6dd54bf8bb48c87f6276555e8014d4ea27742d84ddbb0e7b68be575f4ca438d7", size = 1720277, upload-time = "2024-11-30T01:28:05.397Z" },
+    { url = "https://files.pythonhosted.org/packages/3e/48/5dcfd7f97a5ac696ad1fe750528784694c374ee64312bfbf96d14284f74a/lap-0.5.12-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:9db0e048cfb561f21671a3603dc2761f108b3111da66a7b7d2f035974dcf966e", size = 1712562, upload-time = "2024-11-30T01:28:19.952Z" },
+    { url = "https://files.pythonhosted.org/packages/77/60/ac8702518e4d7c7a284b40b1aae7b4e264a029a8476cb674067a26c17f3c/lap-0.5.12-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:517b8bd02e56b8466244fc4c0988aece04e6f8b11f43406ae195b4ce308733fb", size = 1724195, upload-time = "2024-11-30T01:28:46.411Z" },
+    { url = "https://files.pythonhosted.org/packages/4c/3b/62181a81af89a6e7cefca2390d1f0822f7f6b73b40393ea04000c1ac0435/lap-0.5.12-cp313-cp313-win_amd64.whl", hash = "sha256:59dba008db14f640a20f4385916def4b343fa59efb4e82066df81db5a9444d5e", size = 1476213, upload-time = "2024-11-30T01:29:03.832Z" },
+    { url = "https://files.pythonhosted.org/packages/9f/4b/2db5ddb766cda2bdbf4012771d067d2b1c91e0e2d2c5ca0573efcd7ad321/lap-0.5.12-cp313-cp313-win_arm64.whl", hash = "sha256:30309f6aff8e4d616856ec8c6eec7ad5b48d2687887b931302b5c8e6dfac347a", size = 1465708, upload-time = "2024-11-30T01:29:34.141Z" },
+]
+
+[[package]]
 name = "lark"
 version = "1.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2192,6 +2219,7 @@ source = { editable = "." }
 dependencies = [
     { name = "fiftyone" },
     { name = "jupyterlab" },
+    { name = "lap" },
     { name = "pydantic-settings" },
     { name = "tensorboard" },
     { name = "tqdm" },
@@ -2212,6 +2240,7 @@ dev = [
 requires-dist = [
     { name = "fiftyone", specifier = ">=1.9.0" },
     { name = "jupyterlab", specifier = ">=4.4.9" },
+    { name = "lap", specifier = ">=0.5.12" },
     { name = "pydantic-settings", specifier = ">=2.11.0" },
     { name = "tensorboard", specifier = ">=2.20.0" },
     { name = "tqdm", specifier = ">=4.67.1" },

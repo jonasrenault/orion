@@ -15,6 +15,7 @@ requires-python = ">=3.12"
 dependencies = [
     "fiftyone>=1.9.0",
     "jupyterlab>=4.4.9",
+    "lap>=0.5.12",
     "pydantic-settings>=2.11.0",
     "tensorboard>=2.20.0",
     "tqdm>=4.67.1",
