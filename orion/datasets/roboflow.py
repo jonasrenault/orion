@@ -23,6 +23,14 @@ LABEL_MAPPING = {
 
 
 def download(dir: Path = settings.ORION_HOME_DIR / "roboflow"):
+    """
+    Downlad images and annotations from the russian military annotated dataset
+    on roboflow and format them to be imported into a fo.Dataset.
+
+    Args:
+        dir (Path, optional): the dataset dir.
+            Defaults to settings.ORION_HOME_DIR / "roboflow".
+    """
     download_and_extract(DATASET_URL, "dataset_rf.zip", dir)
     restructure_dataset(dir)
 

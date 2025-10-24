@@ -3,6 +3,7 @@ site_description: Automated Target Recognition of Military Vehicles
 site_url: http://jrenault.fr/orion/
 nav:
     - Home: index.md
+    - Classes: classes.md
     - Datasets: datasets.md
     - Models: models.md
 theme:

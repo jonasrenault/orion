@@ -42,7 +42,7 @@ def prepare(
 
     Args:
         dir (Path, optional): directory where files will be downloaded.
-            Defaults to ORION_HOME_DIR / "imagenet".
+            Defaults to ORION_HOME_DIR.
     """
     LOGGER.info("========== Downloading images from ImageNet dataset ==========")
     # Download ImageNet images for classes imagenet_ids
