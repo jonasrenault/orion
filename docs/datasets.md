@@ -119,9 +119,6 @@ orion prepare --help
 
  Prepare a dataset of annotated military vehicle images.
 
- Args:     dir (Path, optional): directory where files will be downloaded.         Defaults to
- ORION_HOME_DIR.
-
 ╭─ Options ───────────────────────────────────────────────────────────────────────────────────────────────╮
 │ --dir   -d      DIRECTORY  Orion home directory. [default: ~/.cache/orion]                              │
 │ --ids           TEXT       List of class ids to download. [default: n04389033]                          │

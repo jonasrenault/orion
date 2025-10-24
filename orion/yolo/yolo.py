@@ -98,6 +98,9 @@ def predict(
             exists=True,
         ),
     ],
+    save: Annotated[
+        bool, typer.Option("--save", "-s", help="save annotated images.")
+    ] = False,
     save_txt: Annotated[
         bool, typer.Option(help="save detection results in a txt file.")
     ] = True,
@@ -118,6 +121,7 @@ def predict(
     Args:
         model_path (str | Path): the model to use for prediction.
         data (str | Path): data to make predictions on.
+        save (bool, optional): save annotated images. Defaults to False.
         save_txt (bool, optional): save detection results in a txt file. Defaults to True.
         save_conf (bool, optional): save confidence score for each detection.
             Defaults to True.
@@ -136,6 +140,7 @@ def predict(
     results = model.predict(
         data,
         stream=False,
+        save=save,
         save_txt=save_txt,
         save_conf=save_conf,
         project=project,
