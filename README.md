@@ -8,7 +8,7 @@
 
 ## Documentation
 
-**Checkout Orion's [documentation](http://jrenault.fr/orion/) for help.
+**Checkout Orion's [documentation](http://jrenault.fr/orion/) for help.**
 
 ## Models
 
@@ -87,7 +87,7 @@ orion track ./orion12m.pt resources/test/mev1.mp4
 - The [resources](./resources/) directory contains video samples for vehicle detection task.
 - The [notebooks](./notebooks/) directory contains exemple notebooks on how to
   1. [Prepare](./notebooks/01_Prepare.ipynb) a custom dataset of images annotated for automatic target recognition of military vehicles.
-  2. [Train](./notebooks/02_Train.ipynb) fine-tune a YOLO12 model using the prepared dataset.
+  2. [Train](./notebooks/02_Train.ipynb) a YOLO12 model using the prepared dataset.
   3. [Evaluate](./notebooks/03_Evaluate.ipynb) a fine-tuned model on a realistic test dataset.
 
 ## Run the notebooks
