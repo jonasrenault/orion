@@ -173,5 +173,13 @@ def download(
     ids: list[str],
     dir: Path = settings.ORION_HOME_DIR / "imagenet",
 ):
+    """
+    Download ImageNet images and annotations for the given class ids.
+
+    Args:
+        ids (list[str]): the class ids to download.
+        dir (Path, optional): the dataset directory.
+            Defaults to settings.ORION_HOME_DIR / "imagenet".
+    """
     download_imagenet_detections(ids, dir)
     cleanup_labels_without_images(dir)

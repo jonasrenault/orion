@@ -95,7 +95,7 @@ def _read_yolo_detections_file(predictions_file: Path) -> npt.NDArray[np.floatin
 
 def _uncenter_boxes(boxes: npt.NDArray[np.floating]):
     """
-    YOLOv8 represents bounding boxes in a centered format with coordinates
+    YOLO represents bounding boxes in a centered format with coordinates
     [center_x, center_y, width, height], whereas FiftyOne stores bounding
     boxes in [top-left-x, top-left-y, width, height] format.
 
@@ -129,7 +129,7 @@ def _convert_yolo_detections_to_fiftyone(
     yolo_detections: npt.NDArray[np.floating], class_list: list[str]
 ) -> fo.Detections:
     """
-    Convert YoloV8 detections as numpy arrays to FiftyOne Detections object
+    Convert YOLO detections as numpy arrays to FiftyOne Detections object
 
     Args:
         yolo_detections (npt.NDArray[np.floating]): yolo detections
